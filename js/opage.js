@@ -17,23 +17,23 @@ let isNone = false;
 var posScroll = 0; // 현재 스크롤 위치
 
 
-$(function(){
-	winHeight = document.body.clientHeight;
-	posScroll = window.scrollY;
+// $(function(){
+// 	winHeight = document.body.clientHeight;
+// 	posScroll = window.scrollY;
 	
-	// opage 높이 설정
-	$("[opage]").height(winHeight);
-	$("[opage]").each(function(index){
-		// Each starting position y	
-		oPage.push( $(this).position().top ); 
-	});
+// 	// opage 높이 설정
+// 	$("[opage]").height(winHeight);
+// 	$("[opage]").each(function(index){
+// 		// Each starting position y	
+// 		oPage.push( $(this).position().top ); 
+// 	});
 	
-	$("[opage]").each(function(index){
-		// Each starting position y	
-		if( ( oPage[index] <= posScroll ) && ( ( oPage[index] + winHeight ) > posScroll ) ){
-			oIdx = index;
-		}
-	});
+// 	$("[opage]").each(function(index){
+// 		// Each starting position y	
+// 		if( ( oPage[index] <= posScroll ) && ( ( oPage[index] + winHeight ) > posScroll ) ){
+// 			oIdx = index;
+// 		}
+// 	});
 
 
 	$('#onepage').on('scroll touchmove mousewheel', function(event) {
@@ -130,4 +130,3 @@ $(function(){
 			}
 		}
 	});
-});

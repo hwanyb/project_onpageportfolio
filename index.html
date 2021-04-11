@@ -1,27 +1,252 @@
-<html>
-	<head>
-		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-	</head>
-	<style>
-	body, html{padding:0;margin:0;}
-	section{box-sizing:border-box;color:#fff;font-size:24px;text-align:center;}
-	.s1{background-color:#eee;}
-	.s2{background-color:#ddd;}
-	.s3{background-color:#bbb;}
-	.s4{background-color:#999;}
-	.s5{background-color:#444;}
-	</style>
-	<body>	
-		<div id="onepage">
-			<section class="s1" opage>section01</section>
-			<section class="s2" opage>section02</section>
-			<section class="s3" opage>section03</section>
-			<section class="s4" opage>section04</section>			
-			<section class="s5" opage>section05</section>
-			<section class="s4" opage>section04</section>			
-			<section class="s5" opage>section05</section>
-		</div>
-		<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="js/opage.js"></script>	
-	</body>
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>HWANYB's portfolio</title>
+    <meta name="author" content="Your Name">
+    <meta name="description" content="Example description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/x-icon" href="" />
+</head>
+
+<body>
+    <main>
+        <div id="onepage">
+            <section class="mainsec1 s1" opage>
+                <article class="introduce">
+                    <p><b>2021 </b> front-end portfolio</p>
+                    <h2>감각있는<br>개발자<br>변환희입니다.</h2>
+                </article>
+                <article class="bottom">
+                    <div class="scrollWrap">
+                        <div class="scroll">
+                            <div class="over">
+                                <div class="circle"></div>
+                            </div>
+                            <p>scroll</p>
+                        </div>
+
+                    </div>
+                    <div class="iconWrap">
+                        <div class="icons">
+                            <a href="https://github.com/Hwanyb"><img src="img/giticon.png" alt=""></a>
+                            <a href="https://hwanyb.tistory.com/"><img src="img/tistoryicon.png" alt=""></a>
+                        </div>
+                        <p>Copyright © hwanhee byun.</p>
+                    </div>
+                </article>
+            </section>
+            <section class="mainsec2 s2" opage>
+                <article class="mainsec2_intro">
+                    <div class="mainsec2_intro_img">
+                        <img src="img/intro_img1.png" alt="">
+                        <img src="img/intro_img2.png" alt="">
+                    </div>
+                    <div class="mainsec2_intro_txt">
+                        <b>변환희 / Byun Hwanhee</b>
+                        <br><br>
+                        <p>1996.03</p><br>
+                        <p>010-3050-3337</p>
+                        <p>mnn9502@naver.com</p>
+                    </div>
+                </article>
+                <article class="mainsec2_intro2">
+                    <div class="mainsec2_intro2_first">
+                        <h2>안녕하세요.<br>신입 프론트엔드 개발자<br>변환희입니다!</h2>
+                        <p>저는 어쩌구입니다. 저는 그래서 어쩌구합니다.<br>저는 어쩌구입니다. 저는 그래서 어쩌구합니다.<br>저는 어쩌구입니다. 저는 그래서 어쩌구합니다.<br>잘 부탁드립니다!</p>
+                    </div>
+                    <div class="detail education">
+                        <h4>EDUCATION</h4>
+                        <div class="discript">
+                            <div class="discript_l">
+                                <p>2020 . 12 - 2021 . 05</p>
+                                <p>2015 . 03 - 2020 . 02</p>
+                                <p>2012 . 03 - 2015. 02</p>
+                            </div>
+                            <div class="discript_r">
+                                <p>그린컴퓨터아트학원</p>
+                                <small>프론트엔드 양성과정 (900h)</small>
+                                <br>
+                                <p>덕성여자대학교</p>
+                                <small>텍스타일디자인</small>
+                                <small class="smalmb">시각디자인 (부전공)</small>
+                                <p>경민IT고등학교</p>
+                                <small>디자인과</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail license">
+                        <h4>LICENSE</h4>
+                        <div class="discript">
+                            <div class="discript_l">
+                                <p>2021 . 0?</p>
+                                <p>2021 . 0?</p>
+                                <p>2021 . 0?</p>
+                                <p>2020 . 02</p>
+                                <p>2014 . 08</p>
+                            </div>
+                            <div class="discript_r">
+                                <p>정보처리기사</p>
+                                <p>시각디자인 산업기사</p>
+                                <p>컴퓨터그래픽스 운용기능사</p>
+                                <p>운전면허 2종 보통</p>
+                                <p>웹디자인 기능사</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail skills">
+                        <h4>SKILLS</h4>
+                        <div class="discript">
+                            <div class="discript_l">
+                                <p>DESIGN</p>
+                                <p>PUBLISHING</p>
+                                <p>FRONT-END</p>
+                            </div>
+                            <div class="discript_r">
+                                <p>adobe photoshop</p>
+                                <div class="underbar"></div>
+                                <div class="overbar"></div>
+                                <p>adobe illustrator</p>
+                                <div class="underbar"></div>
+                                <div class="overbar"></div>
+                                <p>adobe indesign</p>
+                                <div class="underbar"></div>
+                                <div class="overbar"></div>
+                                <p>adobe XD</p>
+                                <div class="underbar"></div>
+                                <div class="overbar"></div>
+                                <p>html / css</p>
+                                <div class="underbar"></div>
+                                <div class="overbar"></div>
+                                <p>java script / jquery</p>
+                                <div class="underbar"></div>
+                                <div class="overbar"></div>
+                                <p>sql</p>
+                                <div class="underbar"></div>
+                                <div class="overbar"></div>
+                                <p>php</p>
+                                <div class="underbar"></div>
+                                <div class="overbar"></div>
+                                <p>node.js</p>
+                                <div class="underbar"></div>
+                                <div class="overbar"></div>
+                                <p>vue.js</p>
+                                <div class="underbar"></div>
+                                <div class="overbar"></div>
+                                <p>react.js</p>
+                                <div class="underbar"></div>
+                                <div class="overbar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="mainsec3 s3" opage>
+                <div class="title">
+                    <h2>PROJECTS</h2>
+                    <P>리뉴얼 기획부터 퍼블리싱, DB연결 작업까지 완료한 프로젝트입니다.</P>
+                </div>
+                <article class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide vips">
+                            <img src="img/vipsmockup.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide seomun">
+                            <img src="img/seomunmockup.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </article>
+            </section>
+            <section class="mainsec4 s4" opage>
+                <article>
+                    <h2>WORKS</h2>
+                    <P>#FRONTEND #PUBLISHING #WEBDESIGN</P>
+                    <div>
+                        <div>
+                            <img src="img/lelabomockup.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="img/roundmockup.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="img/eoyeomomockup.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="img/pollexzonemockup.jpg" alt="">
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="mainsec5 s5" opage>
+                <article>
+                    <h2>CONTACT</h2>
+                    <p>포트폴리오 관련 문의 & 비지니스 관련 문의 환영입니다!</p>
+                    <div class="content">
+                        <form>
+                            <p>
+                                <label for="name">이름</label>
+                                <input name="name" type="text">
+                            </p>
+                            <p>
+                                <label for="email">이메일</label>
+                                <input name="email" type="text">
+                            </p>
+                            <p>
+                                <label for="content">내용</label>
+                                <textarea name="text" cols="30" rows="100" class="text"></textarea>
+                            </p>
+
+                            <input class="submit" type="submit">
+
+                        </form>
+
+
+                    </div>
+                </article>
+                <article class="right">
+                    <div class="contactLabel">
+                        <p>Call</p>
+                        <p>Address</p>
+                        <p>E-mail</p><br><br>
+                        <p class="memo">※ 파일이 있는 메시지를 보낼 경우
+                            이메일로 전송부탁드립니다.
+                            <br><br>
+                            <small>(공란없이 이름과 이메일, 메세지를 모두
+                                입력해야 메일이 발송됩니다.)</small>
+                        </p>
+                    </div>
+                    <div class="contactValue">
+                        <p>010 - 3050 - 3337</p>
+                        <p>서울시 강북구 수유동</p>
+                        <p>mnn9502@naver.com</p>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footerWrap"></div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/opage.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+    </script>
+</body>
+
 </html>
