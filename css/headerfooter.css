@@ -1,0 +1,146 @@
+header {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: -80px;
+    z-index: 9999;
+    opacity: 0;
+}
+
+.headerWrap {
+    width: 1492px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+nav > ul {
+    display: flex;
+    margin-left: 700px;
+}
+
+nav > ul > li {
+    margin-right: 60px;
+    font-size: 15px;
+    line-height: 70px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 100;
+    text-align: center;
+    position: relative;
+
+}
+.fontweight500{
+    font-weight: 500;
+}
+
+nav > ul > li::after {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    height: 1px;
+    width: 0;
+    bottom: 23px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    transition: 0.3s; 
+}
+nav > ul > li.changed::after {
+background-color: #6E6E6E;
+}
+
+nav > ul > li:hover::after {
+    width: 120%;
+}
+nav > ul > li:hover{
+    font-weight: 500;
+}
+.btnNav > span {
+    cursor: pointer;
+}
+.btnNav > span > div {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column
+}
+
+.btnNav > span > div:first-child {
+    width: 21px;
+    height: 2px;
+    margin-bottom: 7px;
+    margin-left: 9px;
+}
+
+.btnNav > span > div:nth-child(2) {
+    width: 30px;
+    height: 2px;
+    margin-bottom: 7px;
+}
+
+.btnNav > span > div:nth-child(3) {
+    width: 15px;
+    height: 2px;
+    margin-left: 15px;
+}
+/*
+.btnNav:hover :nth-child(1){
+    width: 30px;
+    margin-left: 0;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.btnNav:hover :nth-child(2){
+    width: 18px;
+    margin-left: 12px;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.btnNav:hover :nth-child(3){
+    width: 21px;
+    margin-left: 9px;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+*/
+
+/**********************footer*************************/
+
+
+footer {
+    background-color: #8BA6C0;
+    width: 100%;
+    padding: 80px 0;
+}
+
+.footerWrap {
+    width: 1492px;
+    margin: auto;
+    text-align: center;
+}
+
+.btnTop {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin: auto;
+    cursor: pointer;
+}
+
+.footerWrap > .txt {
+    color: #fff;
+    margin-top: 50px;
+}
+
+.footerWrap > .txt > p {
+    font-weight: 100;
+    font-size: 10px;
+}
+
+.footerWrap > .txt > p > b {
+    font-size: 15px;
+    font-weight: 300;
+}

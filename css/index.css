@@ -1,6 +1,8 @@
-*{
+* {
     box-sizing: border-box;
 }
+
+/*--------------intro start----------------*/
 .intro {
     width: 100%;
     height: 100vh;
@@ -26,16 +28,22 @@
     width: inherit;
 }
 
+/*--------------intro end----------------*/
 
 
+/*--------------main start----------------*/
 main {
     width: 100%;
     position: relative;
 }
 
+
+
+
+
+/*--------------mainsec1 start----------------*/
 .mainsec1 {
     width: 100%;
-    height: 100vh;
     background-image: url(../img/introbg.jpg);
     background-repeat: no-repeat;
     position: relative;
@@ -62,38 +70,75 @@ main {
     font-size: 18px;
     font-weight: 300;
     color: #fff;
+    margin-left: -500px;
+    opacity: 0;
+    margin-bottom: 10px;
 }
 
 .mainsec1 > .introduce > p > b {
     font-weight: 700;
 }
 
+.typing-txt {
+    display: none;
+}
+
+.typing {
+    display: inline;
+    animation-name: cursor;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    font-size: 60px;
+    line-height: 80px;
+}
+
+@keyframes cursor {
+    0% {
+        border-right: 3px solid rgba(255, 255, 255, 0)
+    }
+
+    50% {
+        border-right: 3px solid #ffffff
+    }
+
+    100% {
+        border-right: 3px solid rgba(255, 255, 255, 0)
+    }
+}
+
 .mainsec1 > .introduce > h2 {
+    margin-left: -500px;
     font-size: 60px;
     font-weight: 700;
     color: #fff;
+    opacity: 0;
+    line-height: 80px;
 }
 
-.mainsec1 > .bottom {
+.mainsec1 > .bottomCenter {
     position: absolute;
     width: 1492px;
     height: 100px;
     margin: auto;
-    bottom: 0;
+    bottom: -100px;
+    opacity: 0;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
+    z-index: 6666;
 }
 
 .scrollWrap {
     vertical-align: middle;
     margin: auto;
+    cursor: pointer;
+
+    position: relative;
 }
 
 .scrollWrap > .scroll {
     margin: auto;
     position: relative;
-
 }
 
 .scrollWrap > .scroll > p {
@@ -121,6 +166,16 @@ main {
     background-color: #fff;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.mainsec1 > .bottomRight {
+    position: absolute;
+    width: 1492px;
+    height: 100px;
+    margin: auto;
+    bottom: -100px;
+    opacity: 0;
+    right: 214px;
 }
 
 .iconWrap {
@@ -158,27 +213,33 @@ main {
     line-height: 30px;
 }
 
+
+
+
+/*--------------mainsec2 (about) start----------------*/
 .mainsec2 {
     width: 1492px;
     margin: auto;
     position: relative;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 300px;
 
 }
 
 .mainsec2 > .mainsec2_intro {
-    position: relative;
-    margin-top: 49px;
-    width: 484px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    margin-top: 150px;
+    width: 358px;
 }
 
 
 .mainsec2 > .mainsec2_intro > .mainsec2_intro_img {
+    opacity: 0;
     background-color: #BDCCDB;
-    width: 484px;
-    height: 665px;
+    width: 358px;
+    height: 493px;
     overflow: hidden;
     position: relative;
 }
@@ -190,17 +251,24 @@ main {
 
 .mainsec2 > .mainsec2_intro > .mainsec2_intro_img > img:first-child {
     mix-blend-mode: color-burn;
-    top: -92px;
-    left: -34px;
+    width: 512px;
+    height: 630px;
+    top: -68px;
+    left: -25px;
+    opacity: 0;
 }
 
 .mainsec2 > .mainsec2_intro > .mainsec2_intro_img > img:nth-child(2) {
-    top: 30px;
-    left: 5px;
+    width: 348px;
+    height: 472px;
+    top: 21px;
+    left: -100px;
+    opacity: 0;
 }
 
 .mainsec2 > .mainsec2_intro > .mainsec2_intro_txt {
-    width: 484px;
+    opacity: 0;
+    width: 358px;
     text-align: center;
     font-size: 18px;
     margin-top: 50px;
@@ -216,37 +284,82 @@ main {
     color: #6E6E6E;
 }
 
+.mainsec2  .mainsec2_btnwrap {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mainsec2  .mainsec2_btnwrap > div {
+    width: 232px;
+    height: 50px;
+    background-color: #fff;
+    cursor: pointer;
+    border: 1px solid #8BA6C0;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #6e6e6e;
+    outline: none;
+    text-align: center;
+    line-height: 50px;
+}
+.mainsec2  .mainsec2_btnwrap > div:hover{
+    background-color: rgba(139, 166, 192, 0.37);
+    font-weight: 700;
+}
+
+.mainsec2  .mainsec2_btnwrap > .resume{
+    margin-left: 20px;
+}
 .mainsec2_intro2 {
-    width: 1008px;
+    position: relative;
 }
 
 .mainsec2_intro2 > .mainsec2_intro2_first {
     text-align: right;
     margin-top: 250px;
-    margin-bottom: 320px;
+    margin-bottom: 50px;
 }
 
 .mainsec2_intro2 > .mainsec2_intro2_first > h2 {
     font-size: 60px;
     font-weight: 700;
     color: #8ba6c0;
+    position: relative;
+    bottom: -300px;
+    opacity: 0;
 }
 
 .mainsec2_intro2 > .mainsec2_intro2_first > p {
     font-weight: 300;
-    font-size: 20px;
+    font-size: 18px;
     color: #6e6e6e;
     margin-top: 46px;
-
+    position: relative;
+    opacity: 0;
+    bottom: -300px;
+}
+.mainsec2_intro2 > .mainsec2_intro2_first >p>b {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-.mainsec2_intro2 > .detail {
-    margin-left: 378px;
+
+
+.mainsec2_intro3 {
+    width: 1492px;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.mainsec2_intro3 > .detail {
+    margin-left: 862px;
     margin-bottom: 80px;
 
 }
 
-.mainsec2_intro2 > .detail > h4::before {
+.mainsec2_intro3 > .detail > h4::before {
     content: '';
     display: inline-block;
     width: 3px;
@@ -255,39 +368,52 @@ main {
     margin-right: 17px;
 }
 
-.mainsec2_intro2 > .detail > h4 {
+.mainsec2_intro3 > .detail > h4 {
+    position: relative;
+    left: -500px;
     font-size: 25px;
     font-weight: 500;
     color: #8ba6c0;
+    opacity: 0;
 }
 
-.mainsec2_intro2 > .detail > .discript {
+.mainsec2_intro3 > .detail > .discript {
     display: flex;
     margin-top: 50px;
     margin-left: 20px;
 }
 
 .discript_l {
+    position: relative;
     font-weight: 300;
     font-size: 18px;
     color: #6e6e6e;
     width: 232px;
+    
+}
+.discript_l>p{
+    position: relative;
+    bottom: -50px;
+    opacity: 0;
 }
 
-.discript_l {
-    position: relative;
-}
 
 .discript_r > p {
     font-weight: 500;
     font-size: 18px;
     color: #6e6e6e;
+    position: relative;
+    bottom: -50px;
+    opacity: 0;
 }
 
 .discript_r > small {
     font-weight: 300;
     font-size: 15px;
     color: #6e6e6e;
+    position: relative;
+    bottom: -50px;
+    opacity: 0;
 }
 
 .education > .discript > .discript_l > p:first-child {
@@ -330,50 +456,62 @@ main {
 
 
 .skills > .discript > .discript_l > p:first-child {
-    margin-bottom: 295px;
+    margin-bottom: 222px;
 }
 
 .skills > .discript > .discript_l > p:nth-child(2) {
-    margin-bottom: 135px;
+    margin-bottom: 85px;
 }
 
 .skills > .discript > .discript_r > p {
+    font-size: 15px;
     margin-bottom: 10px;
 }
 
 .skills > .discript > .discript_r > .underbar {
     width: 358px;
-    height: 12px;
+    height: 8px;
     background-color: #E6E6E6;
     border-radius: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     position: relative;
 }
 
 .skills > .discript > .discript_r > .overbar {
     position: absolute;
-    width: 325px;
-    height: 12px;
+    width: 1px;
+    height: 8px;
     background-color: #8ba6c0;
     border-radius: 5px;
-    margin-top: -42px;
+    margin-top: -29px;
 }
 
+
+
+
+/*--------------mainsec3 (projects) start----------------*/
 .mainsec3 {
+    position: relative;
     width: 100%;
     margin: auto;
-    margin-bottom: 300px;
+    margin-top: 110px;
+    overflow: hidden;
 }
 
 .mainsec3 > article {
-    width: 1600px;
+    width: 1492px;
+    height: 500px;
     margin: auto;
     margin-top: 70px;
+    overflow: hidden;
 }
 
 .mainsec3 > .title {
     width: 1492px;
     margin: auto;
+    position: relative;
+    left: -500px;
+    opacity: 0;
 }
 
 .mainsec3 > .title > h2 {
@@ -392,35 +530,148 @@ main {
 }
 
 .mainsec3 .swiper-wrapper {
-    width: 1492px;
-    height: 600px;
-    background-color: #e6e6e6;
     margin: auto;
-    overflow: hidden;
-}
-
-.mainsec3 .swiper-wrapper > .swiper-slide {
-    width: 100%;
-    overflow: hidden;
 }
 
 .mainsec3 .swiper-wrapper > .swiper-slide > img {
-    width: 1492px;
+    width: 100%;
 }
+
 
 
 .swiper-button-next {
     --swiper-theme-color: #6e6e6e;
+    right: 5%;
+    margin-top: -100px;
 }
 
-swiper-button-prev {
+.swiper-button-prev {
     --swiper-theme-color: #6e6e6e;
+    left: 5%;
+    margin-top: -100px;
 }
 
+
+
+
+
+.vipsHover {
+    width: 1492px;
+    height: 500px;
+    position: absolute;
+    bottom: -501px;
+    opacity: 0;
+    background-color: #212121;
+}
+
+.vipsHoverLogo {
+    width: 167px;
+    margin: auto;
+    position: relative;
+    margin-top: 200px;
+}
+
+.vipsHoverLine {
+    width: 1240px;
+    height: 1px;
+    background-color: #fff;
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.vipsHoverTxt {
+    width: 1240px;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.vipsHoverTxt > .left > b {
+    display: block;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.vipsHoverTxt > .right > p {
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 30px;
+    margin-right: 750px;
+}
+
+
+
+
+.seomunHover {
+    width: 1492px;
+    height: 500px;
+    position: absolute;
+    bottom: -501px;
+    opacity: 0;
+    background-color: #091740;
+}
+
+.seomunHoverLogo {
+    width: 200px;
+    margin: auto;
+    position: relative;
+    margin-top: 200px;
+}
+
+.seomunHoverLine {
+    width: 1240px;
+    height: 1px;
+    background-color: #fff;
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.seomunHoverTxt {
+    width: 1240px;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.seomunHoverTxt > .left > b {
+    display: block;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.seomunHoverTxt > .right > p {
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 30px;
+    margin-right: 750px;
+}
+
+
+
+.btnArrow {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+
+
+
+/*--------------mainsec4 (works) start----------------*/
 .mainsec4 {
     width: 100%;
     overflow: hidden;
-    margin-bottom: 300px;
+    margin-top: 110px;
 }
 
 .mainsec4 > article {
@@ -434,6 +685,9 @@ swiper-button-prev {
     font-weight: 500;
     color: #8ba6c0;
     display: inline-block;
+    position: relative;
+    left: -500px;
+    opacity: 0;
 }
 
 .mainsec4 > article > p {
@@ -441,41 +695,39 @@ swiper-button-prev {
     font-size: 18px;
     font-weight: 300;
     color: #6e6e6e;
+    position: relative;
+    left: -1000px;
+    opacity: 0;
 }
 
 .mainsec4 > article > div {
     display: flex;
-    margin-left: 378px;
-    width: 2000px;
+    justify-content: space-between;
+    width: 1492px;
     margin-top: 70px;
 }
 
 .mainsec4 > article > div > div {
-    width: 358px;
-    height: 668px;
-    margin-right: 20px;
+    width: calc(25% - 20px);
+    height: 450px;
     background-color: #e6e6e6;
     overflow: hidden;
     text-align: center;
     position: relative;
-}
-
-.mainsec4 > article > div > div > img {
-    position: absolute;
-    height: 668px;
-    left: 50%;
-    transform: translateX(-50%);
-
+    bottom: -600px;
+    opacity: 0;
+    cursor: pointer;
 }
 
 
 
-
+/*--------------mainse5 (contact) start----------------*/
 .mainsec5 {
     width: 100%;
-    margin-bottom: 300px;
+    margin-bottom: 100px;
     display: flex;
     position: relative;
+    overflow: hidden;
 }
 
 .mainsec5 > article:first-child {
@@ -489,6 +741,9 @@ swiper-button-prev {
     font-weight: 500;
     color: #8ba6c0;
     display: inline-block;
+    position: relative;
+    left: -500px;
+    opacity: 0;
 }
 
 .mainsec5 > article > p {
@@ -496,12 +751,22 @@ swiper-button-prev {
     font-size: 18px;
     font-weight: 300;
     color: #6e6e6e;
+    position: relative;
+    left: -500px;
+    opacity: 0;
 }
 
 .mainsec5 > article > .content {
     margin-left: 378px;
     margin-top: 70px;
+    position: relative;
+    bottom: -500px;
+    opacity: 0;
 }
+.content > form{
+    width: 484px;
+}
+
 
 .content > form > p > label {
     display: block;
@@ -522,7 +787,7 @@ swiper-button-prev {
     color: #6e6e6e;
     outline: none;
     font-family: 'Noto Sans KR', sans-serif;
-     padding: 10px;
+    padding: 10px;
 }
 
 .content > form > p > .text {
@@ -556,32 +821,134 @@ swiper-button-prev {
     margin-left: 126px;
 
 }
+.sent-notification{
+    text-align: center;
+    color: #8BA6C0;
+    font-weight: 500;
+    font-size: 18px;
+}
 
-
-.mainsec5 >.right{
+.mainsec5 > .right {
     position: absolute;
-    left: 1222px;
+    right: -500px;
     margin-top: 200px;
     display: flex;
+    opacity: 0;
 }
-.mainsec5>.right>.contactLabel{
+
+.mainsec5 > .right > .contactLabel {
     font-size: 15px;
     font-weight: 300;
     color: #6e6e6e;
     width: 126px;
     line-height: 50px;
 }
-.mainsec5>.right>.contactLabel>.memo{
+
+.mainsec5 > .right > .contactLabel > .memo {
     width: 484px;
     line-height: 20px;
 }
-.mainsec5>.right>.contactLabel>.memo>small{
+
+.mainsec5 > .right > .contactLabel > .memo > small {
     font-size: 12px;
     line-height: 20px;
 }
-.mainsec5>.right>.contactValue{
+
+.mainsec5 > .right > .contactValue {
     font-size: 15px;
     font-weight: 500;
     color: #6e6e6e;
     line-height: 50px;
+}
+
+
+
+
+/*--------------main end----------------*/
+
+
+
+
+
+
+
+/*************************1492px 이하*****************************/
+@media only screen and (max-width: 1492px) {
+    .mainsec1 > .introduce {
+        width: 100%;
+        padding: 0 102px;
+    }
+
+    .mainsec1 > .bottomCenter {
+        width: 100%;
+    }
+
+    .mainsec1 > .bottomRight {
+        width: 100%;
+        right: 102px;
+    }
+
+    .mainsec2 {
+        width: 100%;
+        padding: 0 102px;
+    }
+
+    .mainsec2_intro2 > .mainsec2_intro2_first > h2 {
+        font-size: 48px;
+    }
+
+    .mainsec2_intro3 {
+        width: 100%;
+    }
+
+    .mainsec2_intro3 > .detail {
+        margin-left: 654px;
+
+    }
+
+    .discript_l {
+        width: 327px;
+    }
+
+    .discript_r {
+        width: 306px;
+    }
+
+    .skills > .discript > .discript_r > .underbar {
+        width: 306px;
+    }
+
+    .skills > .discript > .discript_r > .overbar {
+        width: 290px;
+    }
+
+    .mainsec3 > .title {
+        width: 100%;
+        padding: 0 102px;
+    }
+
+    .mainsec3 > article {
+        width: 100%;
+        padding: 0 102px;
+    }
+
+    .mainsec3 .swiper-wrapper {
+        width: 100%;
+    }
+
+    .mainsec3 .swiper-wrapper > .swiper-slide > img {
+        width: 100%;
+    }
+
+    .mainsec4 > article {
+        width: 100%;
+        padding: 0 102px;
+    }
+
+    .mainsec5 > article {
+        width: 100%;
+        padding: 0 102px;
+    }
+
+
 }
